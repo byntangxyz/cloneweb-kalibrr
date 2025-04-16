@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  background-color: #f7fafc;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 2.5rem;
+  text-allign: center;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  background-color: white;
+}
+header img {
+  width: 7.5rem;
+  height: 100%;
+}
+.container-left {
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 9999px; /* biar jadi oval */
+  padding: 5px 10px;
+  width: fit-content;
+  background-color: white;
+  transition: border 1.5s ease-in-out;
+}
+.search:hover {
+  border: 1px solid #007aff;
+}
+.search input {
+  width: 16rem;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+.search button {
+  background-color: #007aff; /* warna biru */
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ph-faders {
+  font-size: 30px;
+  margin-left: 1rem;
+  padding: 12px;
+  border: 1px solid #ced9ea;
+}
+#login {
+  margin-left: 2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  padding: 16px 36px;
+  background-color: white;
+  border: 1px solid #ced9ea;
+}
+#sign {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  padding: 16px 36px;
+  background-color: #ffbd00;
+  border: 1px solid #ced9ea;
+}
+#lang {
+  font-weight: bold;
+  color: #1254b0;
+  padding: 16px 8px;
+  background-color: white;
+  border: none;
+}
+.container-right a {
+  text-decoration: none;
+  color: black;
+}
+.container-right a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  margin: auto 8px;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.container-featured {
+  display: flex;
+  justify-content: space-between;
+  items-allign: center;
+}
+.featured {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  items-allign: center;
+  width: 100%;
+  margin: auto;
+}
+.featured-card {
+  margin-left: 2px;
+  text-allign: center;
+  position: relative;
+  width: 190px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+  box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+.label {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 30%;
+  left: 20%;
+  z-index: 1;
+}
+.new-badge {
+  background: #ff4d6d;
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 5px;
+  border-radius: 8px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.job-list {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+.job-list-card {
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  display: flex;
+  padding: 4px 16px;
+  justify-content: space-between;
+}
+.card-header img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  object-position: center;
+  width: 8rem;
+}
+.card-body {
+  padding: 0 12px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 234, 234);
+  padding: 0 8px;
+  color: rgb(78, 78, 78);
+  font-size: 12px;
+}
+.tag {
+  background-color: rgb(184, 184, 184);
+  padding: 5px;
+  border-radius: 1rem;
+}
+.card-title {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-title h3 {
+  font-size: 24px;
+  margin: 0;
+}
+#hibrida {
+  background-color: rgb(221, 223, 99);
+  padding: 8px;
+  border-radius: 12px;
+}
+#jarak {
+  background-color: rgb(99, 223, 196);
+  padding: 8px;
+  border-radius: 12px;
+}
+#terima {
+  background-color: rgb(99, 149, 223);
+  padding: 8px;
+  border-radius: 12px;
+}

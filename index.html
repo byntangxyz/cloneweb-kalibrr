@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan | Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-left">
+        <img src="kalibrr-logo.png" alt="logo" />
+        <div class="search">
+          <input type="text" placeholder="Job Position" />
+          <button><i class="ph ph-magnifying-glass"></i></button>
+        </div>
+        <i class="ph-fill ph-faders" style="font-size: 18px"></i>
+      </div>
+      <div class="container-right">
+        <a href="https://www.kalibrr.id/id-ID/employers">Untuk Pemberi Kerja</a>
+        <button id="login">Masuk</button>
+        <button id="sign">Daftar</button>
+        <select name="language" id="lang">
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="container-featured">
+        <div class="featured">
+          <div
+            class="featured-card"
+            style="
+              background-image: url('https://picsum.photos/200/300?random=1');
+            "
+            ffff
+          >
+            <span class="label">Featured Jobs</span>
+          </div>
+          <div
+            class="featured-card"
+            style="
+              background-image: url('https://picsum.photos/200/300?random=2');
+            "
+          >
+            <span class="label">Remote Jobs</span>
+          </div>
+          <div
+            class="featured-card"
+            style="
+              background-image: url('https://picsum.photos/200/300?random=3');
+            "
+          >
+            <span class="label">Hybrid</span>
+          </div>
+          <div
+            class="featured-card"
+            style="
+              background-image: url('https://picsum.photos/200/300?random=4');
+            "
+          >
+            <span class="label"
+              >Fresh Grads <span class="new-badge">NEW</span></span
+            >
+          </div>
+          <div
+            class="featured-card"
+            style="
+              background-image: url('https://picsum.photos/200/300?random=5');
+            "
+          >
+            <span class="label">All Jobs</span>
+          </div>
+          <div
+            class="featured-card"
+            style="
+              background-image: url('https://picsum.photos/200/300?random=6');
+            "
+          >
+            <span class="label">New Jobs</span>
+          </div>
+        </div>
+        <div class="job-list"></div>
+      </div>
+      <div class="job-list">
+        <div class="job-list-card">
+          <div class="card-header">
+            <img src="company1.png" alt="perusahaan" />
+            <div class="card-title">
+              <h3>Student Advisor Sales for SUN</h3>
+              <p>
+                SUN Education Group
+                <i class="ph-fill ph-seal-check" style="color: blue"></i>
+              </p>
+            </div>
+            <i class="ph ph-heart-straight"></i>
+          </div>
+          <div class="card-body">
+            <p><i class="ph-fill ph-map-pin"></i> Surabaya, Indonesia</p>
+            <p><i class="ph-fill ph-credit-card"></i> Gaji Tidak Diumumkan</p>
+            <p><i class="ph-fill ph-briefcase"></i> Penuh Waktu</p>
+            <p>
+              <i class="ph ph-magnifying-glass"></i> Rekruter terakhir aktif 2
+              days ago
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Apply before 31 Dec</p>
+            <p class="tag">Lulusan baru / Junior</p>
+          </div>
+        </div>
+        <div class="job-list-card">
+          <div class="card-header">
+            <img src="company2.png" alt="perusahaan" />
+            <div class="card-title">
+              <h3>Property Sales Executive</h3>
+              <p>
+                PT. Pionir Alfa Sejahtera
+                <i class="ph-fill ph-seal-check" style="color: blue"></i>
+              </p>
+            </div>
+            <i class="ph ph-heart-straight"></i>
+          </div>
+          <div class="card-body">
+            <p><i class="ph-fill ph-map-pin"></i> Depok, Indonesia</p>
+            <p><i class="ph-fill ph-credit-card"></i> Gaji Tidak Diumumkan</p>
+            <p>
+              <i class="ph-fill ph-briefcase"></i> Penuh Waktu
+              <span id="hibrida"
+                ><i class="ph-fill ph-warehouse"></i> Hibrida</span
+              >
+            </p>
+            <p>
+              <i class="ph ph-magnifying-glass"></i> Rekruter terakhir aktif 9
+              days ago
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Apply before 20 Apr</p>
+            <p class="tag">Lulusan baru / Junior</p>
+          </div>
+        </div>
+        <div class="job-list-card">
+          <div class="card-header">
+            <img src="company3.png" alt="perusahaan" />
+            <div class="card-title">
+              <h3>Sales Engineer</h3>
+              <p>
+                PT. Kian Ho Indonesia
+                <i class="ph-fill ph-seal-check" style="color: blue"></i>
+              </p>
+            </div>
+            <i class="ph ph-heart-straight"></i>
+          </div>
+          <div class="card-body">
+            <p><i class="ph-fill ph-map-pin"></i> Medan, Indonesia</p>
+            <p><i class="ph-fill ph-credit-card"></i> Gaji Tidak Diumumkan</p>
+            <p>
+              <i class="ph-fill ph-briefcase"></i> Penuh Waktu
+              <span id="jarak"
+                ><i class="ph-fill ph-house"></i> Jarak Jauh</span
+              >
+            </p>
+            <p>
+              <i class="ph ph-magnifying-glass"></i> Rekruter terakhir aktif 2
+              days ago
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Apply before 21 Apr</p>
+            <p class="tag">Supervisor / Asisten Manager</p>
+          </div>
+        </div>
+        <div class="job-list-card">
+          <div class="card-header">
+            <img src="company4.png" alt="perusahaan" />
+            <div class="card-title">
+              <h3>Security Engineer - Red Team</h3>
+              <p>
+                FinAccel
+                <i class="ph-fill ph-seal-check" style="color: blue"></i>
+              </p>
+            </div>
+            <i class="ph ph-heart-straight"></i>
+          </div>
+          <div class="card-body">
+            <p><i class="ph-fill ph-map-pin"></i> South Jakarta, Indonesia</p>
+            <p><i class="ph-fill ph-credit-card"></i> Gaji Tidak Diumumkan</p>
+            <p><i class="ph-fill ph-briefcase"></i> Penuh Waktu</p>
+            <p>
+              <i class="ph ph-magnifying-glass"></i> Rekruter terakhir aktif 2
+              month ago
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Apply before 1 Jul</p>
+            <p class="tag">Mid-Senior Level Manager</p>
+          </div>
+        </div>
+        <div class="job-list-card">
+          <div class="card-header">
+            <img src="company5.png" alt="perusahaan" />
+            <div class="card-title">
+              <h3>Support Engineer L3</h3>
+              <p>
+                Klik Digital Sinergi
+                <i class="ph-fill ph-seal-check" style="color: blue"></i>
+              </p>
+            </div>
+            <i class="ph ph-heart-straight"></i>
+          </div>
+          <div class="card-body">
+            <p><i class="ph-fill ph-map-pin"></i> Surabaya, Indonesia</p>
+            <p><i class="ph-fill ph-credit-card"></i> Gaji Tidak Diumumkan</p>
+            <p><i class="ph-fill ph-briefcase"></i> Penuh Waktu</p>
+            <p>
+              <i class="ph ph-magnifying-glass"></i> Rekruter terakhir aktif 18
+              hours ago
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Apply before 7 Jun</p>
+            <p class="tag">Lulusan baru / Junior</p>
+          </div>
+        </div>
+        <div class="job-list-card">
+          <div class="card-header">
+            <img src="company6.png" alt="perusahaan" />
+            <div class="card-title">
+              <h3>Back End Developer</h3>
+              <p>
+                NEXA
+                <i class="ph-fill ph-seal-check" style="color: blue"></i>
+              </p>
+            </div>
+            <i class="ph ph-heart-straight"></i>
+          </div>
+          <div class="card-body">
+            <p><i class="ph-fill ph-map-pin"></i> Semarang Kota, Indonesia</p>
+            <p><i class="ph-fill ph-credit-card"></i> Gaji Tidak Diumumkan</p>
+            <p>
+              <i class="ph-fill ph-briefcase"></i> Penuh Waktu
+              <spam id="terima"
+                ><i class="ph-fill ph-graduation-cap"></i> Terima Lulusan
+                Baru</spam
+              >
+            </p>
+            <p>
+              <i class="ph ph-magnifying-glass"></i> Rekruter terakhir aktif 2
+              days ago
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Apply before 30 Apr</p>
+            <p class="tag">Lulusan baru / Junior</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
